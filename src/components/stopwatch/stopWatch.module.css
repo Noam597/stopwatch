@@ -1,0 +1,127 @@
+.stopWatch {
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  transition: all 0.45s;
+}
+
+.stopWatch button {
+  margin: 1rem;
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+.stopWatch button:active {
+  background-color: #b817b8;
+}
+
+.timer {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin: auto;
+  border-radius: 50%;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border: solid 0.5rem rgba(182, 62, 182, 0.5);
+}
+.timer h1 {
+  position: absolute;
+  font-size: 3rem;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  margin: 0;
+  text-shadow: 0 0 5px white;
+  letter-spacing: 7px;
+  background-color: black;
+  padding: 0.5rem 1rem;
+}
+.winder {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: solid 0.7rem rgba(255, 255, 255, 0.2);
+  height: 2rem;
+  top: -3.5rem;
+  left: 10rem;
+}
+.winderTop {
+  position: absolute;
+  background-color: grey;
+  border: solid 0.5rem gold;
+  border-radius: 5px;
+  height: 2rem;
+  top: -5rem;
+  left: 10.2rem;
+  transform: rotate(90deg);
+}
+.clicker {
+  position: absolute;
+  border: solid 0.5rem grey;
+  height: 1rem;
+  background-color: grey;
+  top: 0.5rem;
+  right: 3rem;
+  transform: rotate(40deg);
+}
+
+.clickerTop {
+  position: absolute;
+  border: solid 0.5rem red;
+  border-radius: 5px;
+  height: 1rem;
+  background-color: grey;
+  top: -0.55rem;
+  right: 2rem;
+  transform: rotate(130deg);
+}
+
+.lapList {
+  color: white;
+  width: 40%;
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: auto 2rem;
+  box-shadow: 0 0 10px;
+}
+.lapList div {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+  width: 90%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+}
+
+.start {
+  background-color: #58cd58;
+}
+.stop {
+  background-color: red;
+}
+.reset {
+  background-color: #2727da;
+}
+@media screen and (max-width: 438px) {
+  .stopWatch {
+    flex-direction: column;
+    margin-top: 15%;
+  }
+  .timer h1 {
+    font-size: 3rem;
+  }
+  .lapList {
+    width: 90%;
+    margin: auto;
+  }
+  .lapList div {
+    width: 90%;
+    margin: 0.5rem;
+  }
+}

@@ -1,0 +1,52 @@
+.clock {
+  margin-top: 10%;
+  width: 100%;
+
+  position: relative;
+}
+.switch {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+.clockShape {
+  align-items: center;
+  text-align: center;
+  width: 40%;
+  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  margin: auto;
+  border: solid 0.3rem rgba(182, 62, 182, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 0 10px#b63eb680;
+}
+.clockShape h1 {
+  font-size: 3rem;
+  letter-spacing: 10px;
+  text-shadow: 0 0 5px white;
+}
+.buttons {
+  align-items: center;
+}
+.buttons button {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 438px) {
+    .clock{
+       height:50vh ; 
+    } 
+  .clockShape {
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: 3%;    
+    color: white;
+    background-color: black;
+    border-radius: 12px;
+  }
+  .clockShape h1 {
+    font-size: 2rem;
+  }
+}

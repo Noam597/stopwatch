@@ -1,0 +1,33 @@
+body{
+  margin: 0;
+  box-sizing: border-box;
+  background-image: radial-gradient(circle at right bottom ,purple,blue,black,black);
+  background-size: 100% 200%;
+  background-repeat: no-repeat;
+}
+
+.app{
+  /* padding: auto; */
+  height: 100vh;
+}
+.switch{
+  width: 50%;
+ text-align: center;
+  margin: auto ;
+}
+
+.switch button{
+  color: white;
+  font-size: 2rem;
+  margin: 1rem;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #b61ab6;
+  cursor: pointer;
+}
+@media screen and (max-width:438px){
+  .app{
+    height: 100%;
+  }
+}
