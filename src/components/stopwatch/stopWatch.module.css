@@ -42,44 +42,7 @@
   background-color: black;
   padding: 0.5rem 1rem;
 }
-.winder {
-  position: absolute;
-  background-color: rgba(255, 255, 255, 0.2);
-  border: solid 0.7rem rgba(255, 255, 255, 0.2);
-  height: 2rem;
-  top: -3.5rem;
-  left: 10rem;
-}
-.winderTop {
-  position: absolute;
-  background-color: grey;
-  border: solid 0.5rem gold;
-  border-radius: 5px;
-  height: 2rem;
-  top: -5rem;
-  left: 10.2rem;
-  transform: rotate(90deg);
-}
-.clicker {
-  position: absolute;
-  border: solid 0.5rem grey;
-  height: 1rem;
-  background-color: grey;
-  top: 0.5rem;
-  right: 3rem;
-  transform: rotate(40deg);
-}
 
-.clickerTop {
-  position: absolute;
-  border: solid 0.5rem red;
-  border-radius: 5px;
-  height: 1rem;
-  background-color: grey;
-  top: -0.55rem;
-  right: 2rem;
-  transform: rotate(130deg);
-}
 
 .lapList {
   color: white;
