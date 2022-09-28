@@ -23,3 +23,10 @@
   background-color: #b61ab6;
   cursor: pointer;
 }
+@media screen and (max-width:438px){
+  .switch{
+    width: 100%;
+   text-align: center;
+    margin: auto ;
+  }
+}
