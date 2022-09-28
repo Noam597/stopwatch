@@ -1,9 +1,11 @@
 import React from "react";
 import styles from "./header.module.css";
-const Header = () => {
+const Header = ({ watch, onClick }) => {
   return (
     <header className={styles.title}>
-      <h1>Clock/StopWatch</h1>
+      <div className={styles.switch}>
+        <button onClick={onClick}>{!watch ? "stopwatch" : "clock"}</button>
+      </div>
     </header>
   );
 };

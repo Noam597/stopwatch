@@ -15,7 +15,7 @@ const StopWatch = () => {
     if (start) {
       mytimer = setInterval(() => {
         setMiliSeconds((prevtime) => prevtime + 1);
-        if (miliSeconds > 99) {
+        if (miliSeconds > 98) {
           setMiliSeconds(0);
           setSeconds(seconds + 1);
         }
@@ -42,7 +42,12 @@ const StopWatch = () => {
   };
 
   const lapTime = () => {
-    setLap([...lap, `${minutes} : ${seconds} : ${miliSeconds}`]);
+    setLap([
+      ...lap,
+      `${minutes < 10 ? "0" + minutes : minutes} : ${
+        seconds < 10 ? "0" + seconds : seconds
+      } : ${miliSeconds}`,
+    ]);
     console.log(lap);
   };
   return (
@@ -57,18 +62,18 @@ const StopWatch = () => {
         </div>
         {start ? (
           <button className={styles.stop} onClick={() => setStart(!start)}>
-            stop
+            Stop
           </button>
         ) : (
           <button className={styles.start} onClick={() => setStart(!start)}>
-            start
+            Start
           </button>
         )}
         <button className={styles.reset} onClick={reset}>
-          reset
+          Reset
         </button>
         <button style={laps} onClick={lapTime} disabled={!start}>
-          lap
+          Lap
         </button>
       </div>
       {lap.length > 0 && (
