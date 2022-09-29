@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <h2>
-        Created By Noam Harris <a href="https://github.com/Noam597/stopwatch"><FaGithub /></a>
+        Created By Noam Harris <a href="https://github.com/Noam597/stopwatch" target='_blank'><FaGithub /></a>
       </h2>
     </footer>
   );
