@@ -4,11 +4,7 @@
 
   position: relative;
 }
-.switch {
-  width: 50%;
-  text-align: center;
-  margin: auto;
-}
+
 .clockShape {
   align-items: center;
   text-align: center;
@@ -32,7 +28,23 @@
   margin: 1rem;
   padding: 0.5rem 1rem;
 }
-
+@media screen and (max-width: 1024px) {
+  .clock{
+     height:100vh ; 
+  } 
+.clockShape {
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  margin: 3%; 
+  margin-top: 20%;   
+  background-color: black;
+  border-radius: 12px;
+}
+.clockShape h1 {
+  font-size: 2rem;
+}
+}
 @media screen and (max-width: 438px) {
     .clock{
        height:100vh ; 
@@ -43,7 +55,6 @@
     width: 90%;
     margin: 3%; 
     margin-top: 50%;   
-    color: white;
     background-color: black;
     border-radius: 12px;
   }

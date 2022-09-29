@@ -4,13 +4,17 @@ body{
   background-image: radial-gradient(circle at right bottom ,purple,blue,black,black);
   background-size: 100% 200%;
   background-repeat: no-repeat;
+  
 }
 
 .app{
-  /* padding: auto; */
   height: 100vh;
 }
-
+@media screen and (max-width:1024px){
+  .app{
+    height: 100%;
+  }
+}
 @media screen and (max-width:438px){
   .app{
     height: 100%;

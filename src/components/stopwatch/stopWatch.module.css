@@ -71,10 +71,29 @@
 .reset {
   background-color: #2727da;
 }
+@media screen and (max-width: 1024px) {
+  .stopWatch {
+    margin-top: 15%;
+    height: 100vh;
+  
+  }
+  .timer h1 {
+    font-size: 3rem;
+  }
+  .lapList {
+    width: 40%;
+    margin: auto;
+  }
+  .lapList div {
+    width: 90%;
+    margin: 0.5rem;
+  }
+}
 @media screen and (max-width: 438px) {
   .stopWatch {
     flex-direction: column;
     margin-top: 15%;
+   
   }
   .timer h1 {
     font-size: 3rem;

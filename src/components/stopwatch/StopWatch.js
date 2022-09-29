@@ -46,7 +46,7 @@ const StopWatch = () => {
       ...lap,
       `${minutes < 10 ? "0" + minutes : minutes} : ${
         seconds < 10 ? "0" + seconds : seconds
-      } : ${miliSeconds}`,
+      } : ${miliSeconds < 10 ? "0" + miliSeconds : miliSeconds}`,
     ]);
     console.log(lap);
   };

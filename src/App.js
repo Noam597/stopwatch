@@ -21,6 +21,7 @@ function App() {
           }}
         />
         {!watch ? <Clock /> : <StopWatch />}
+        
       </div>
       <Footer />
     </>
