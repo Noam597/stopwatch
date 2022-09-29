@@ -89,6 +89,13 @@
     margin: 0.5rem;
   }
 }
+@media screen and (max-width: 750px) {
+  .stopWatch {
+    
+    height: 100vh;
+  
+  }
+}
 @media screen and (max-width: 438px) {
   .stopWatch {
     flex-direction: column;
